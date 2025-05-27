@@ -10,7 +10,7 @@ body{
 
 header{
   background-color: #424e61
-  color: white;
+  color: 
   width: 100%;
   padding: 20px;
 
@@ -31,7 +31,7 @@ header{
   align-items: center;
 }
 
-.titulo_site{
+.titulo-site{
   padding: 50px;
   text-align: center;
   width: 50%;
@@ -78,7 +78,7 @@ header{
   justify-content: space-around;
 }
 
-.estudante_todos{
+.estudante-todos{
   display: flex;
   justify-content: space-around;
 }
