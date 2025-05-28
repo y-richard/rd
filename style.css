@@ -9,11 +9,10 @@ body{
 }
 
 header{
-  background-color: #424e61
-  color: 
+  background-color: #424e61;
+  color: white;
   width: 100%;
   padding: 20px;
-
 }
 
 .cabecalho-itens{
@@ -73,7 +72,7 @@ header{
   padding: 24px 0;
 }
 
-.estudante.div{
+.estudante-div{
   text-align: center;
   justify-content: space-around;
 }
