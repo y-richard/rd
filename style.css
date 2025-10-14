@@ -106,3 +106,56 @@
     text-decoration: none;
   }
     
+  /* ================================== */
+/* INÍCIO DAS ANIMAÇÕES       */
+/* ================================== */
+
+/* --- Animação 1: Efeito de Hover nos Ícones --- */
+
+/* Aplica a transição suave a todos os ícones que terão o efeito */
+.sociais img,
+.estudante-icone {
+  transition: transform 0.3s ease; /* Duração e tipo da animação */
+}
+
+/* Define o que acontece quando o mouse está sobre os ícones */
+.sociais img:hover,
+.estudante-icone:hover {
+  transform: scale(1.2); /* Aumenta o tamanho do ícone em 20% */
+  cursor: pointer;       /* Muda o cursor para a "mãozinha" */
+}
+
+
+/* --- Animação 2: Efeito de Hover nos Cards dos Estudantes --- */
+
+/* Adiciona a transição suave para o card inteiro */
+.estudante-div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px; /* Borda arredondada para o efeito ficar mais bonito */
+}
+
+/* O que acontece quando o mouse passa sobre o card */
+.estudante-div:hover {
+  transform: translateY(-10px); /* Move o card 10 pixels para cima */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para dar profundidade */
+}
+
+
+/* --- Animação 3: Animação de Entrada para o Título Principal --- */
+
+/* Primeiro, definimos a sequência da animação usando @keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* E um pouco para baixo */
+  }
+  to {
+    opacity: 1; /* Termina totalmente visível */
+    transform: translateY(0); /* E na sua posição original */
+  }
+}
+
+/* Agora, aplicamos essa animação ao título do site */
+.titulo_site {
+  animation: fadeInUp 1s ease-out forwards; /* Nome, duração, tipo e estado final */
+}
